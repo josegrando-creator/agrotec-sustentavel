@@ -1,182 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificado Agrinho 2026</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
 
-    body {
-      margin: 0;
-      padding: 20px;
-      background: linear-gradient(135deg, #0f5c2e, #1a8f4e);
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f5c2e, #1a8f4e);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    .certificado {
-      width: 1000px;
-      height: 700px;
-      background: #fff;
-      border: 18px solid #d4af37;
-      border-image: linear-gradient(to bottom, #d4af37, #b8972e) 1;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-      position: relative;
-      overflow: hidden;
-      padding: 60px 80px;
-      box-sizing: border-box;
-    }
+.certificado {
+  width: 1000px;
+  height: 700px;
+  background: #fff;
+  border: 18px solid #d4af37;
+  border-image: linear-gradient(to bottom, #d4af37, #b8972e) 1;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
 
-    .certificado::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      right: 30px;
-      bottom: 30px;
-      border: 3px solid #0f5c2e;
-      opacity: 0.15;
-      pointer-events: none;
-    }
+.certificado::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 3px solid #0f5c2e;
+  opacity: 0.15;
+}
 
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    .ano {
-      font-size: 28px;
-      color: #0f5c2e;
-      letter-spacing: 4px;
-      font-weight: 500;
-    }
+.ano {
+  font-size: 28px;
+  color: #0f5c2e;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
 
-    .titulo {
-      font-family: 'Playfair Display', serif;
-      font-size: 52px;
-      color: #0f5c2e;
-      margin: 15px 0;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    }
+.titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  color: #0f5c2e;
+  margin: 15px 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
 
-    .subtitulo {
-      font-size: 22px;
-      color: #1a8f4e;
-      margin: 10px 0;
-    }
+.subtitulo {
+  font-size: 22px;
+  color: #1a8f4e;
+  margin: 10px 0;
+}
 
-    .nome {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      color: #0f5c2e;
-      text-align: center;
-      margin: 50px 0 20px;
-      padding: 15px 0;
-      border-top: 3px solid #d4af37;
-      border-bottom: 3px solid #d4af37;
-    }
+.nome {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #0f5c2e;
+  text-align: center;
+  margin: 50px 0 20px;
+  padding: 15px 0;
+  border-top: 3px solid #d4af37;
+  border-bottom: 3px solid #d4af37;
+}
 
-    .texto {
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: center;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto 60px;
-    }
+.texto {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
 
-    .assinaturas {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 2px solid #ddd;
-    }
+.assinaturas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
 
-    .assinatura {
-      text-align: center;
-      width: 45%;
-    }
+.assinatura {
+  text-align: center;
+  width: 45%;
+}
 
-    .linha {
-      width: 180px;
-      height: 2px;
-      background: #0f5c2e;
-      margin: 8px auto;
-    }
+.linha {
+  width: 180px;
+  height: 2px;
+  background: #0f5c2e;
+  margin: 8px auto;
+}
 
-    .footer {
-      position: absolute;
-      bottom: 40px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-    }
-
-    .selo {
-      position: absolute;
-      top: 80px;
-      right: 80px;
-      width: 140px;
-      height: 140px;
-      border: 6px solid #d4af37;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-weight: bold;
-      color: #0f5c2e;
-      transform: rotate(12deg);
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="certificado">
-    <div class="header">
-      <div class="ano">AGRINHO 2026</div>
-      <h1 class="titulo">Certificado de Participação</h1>
-      <p class="subtitulo">Programa Agrinho • Secretaria da Educação</p>
-    </div>
-
-    <p class="texto">
-      Certificamos que
-    </p>
-
-    <div class="nome">
-      <strong>José Francisco Debas Grando</strong>
-    </div>
-
-    <p class="texto">
-      participou com dedicação e excelência do projeto <strong>Agrinho 2026</strong>, 
-      demonstrando compromisso com a agricultura, o meio ambiente e o desenvolvimento sustentável.
-    </p>
-
-    <div class="assinaturas">
-      <div class="assinatura">
-        <div class="linha"></div>
-        <strong>Professor(a) Orientador(a)</strong>
-      </div>
-      <div class="assinatura">
-        <div class="linha"></div>
-        <strong>Coordenador Agrinho</strong>
-      </div>
-    </div>
-
-    <div class="selo">
-      <strong>2026</strong><br>
-      AGRINHO
-    </div>
-
-    <div class="footer">
-      Certificado gerado em 2026 • Paraná
-    </div
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left
